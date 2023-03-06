@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRegisterParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red3"
+        tools:context=".ui.register.RegisterActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivRegisterLogo"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_gravity=""
+                android:layout_marginTop="22dp"
+                android:src="@drawable/splash_wordart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUserRegister"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivRegisterLogo" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabProfileChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_photo_camera"
+                app:layout_constraintBottom_toBottomOf="@+id/ivUserRegister"
+                app:layout_constraintEnd_toEndOf="@+id/ivUserRegister"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tflEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/shades4"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEmail"
+                    style="@style/Subtitle2Semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tflPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/shades4"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tflEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPassword"
+                    style="@style/Subtitle2Semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tflConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/shades4"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tflPassword">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtConfirmPassword"
+                    style="@style/Subtitle2Semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tflName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/shades4"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tflConfirmPassword">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtName"
+                    style="@style/Subtitle2Semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tflPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/shades4"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tflName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPhone"
+                    style="@style/Subtitle2Semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/Subtitle2Semibold"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/gender"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tflPhone"
+                app:layout_constraintStart_toStartOf="@+id/tflPhone"
+                app:layout_constraintTop_toBottomOf="@+id/tflPhone" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <RadioButton
+                    style="@style/Subtitle2Semibold"
+                    android:id="@+id/radGenderMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="120dp"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    style="@style/Subtitle2Semibold"
+                    android:id="@+id/radGenderFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female" />
+            </RadioGroup>
+
+
+            <Button
+                style="@style/Subtitle2Semibold"
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/btn_signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+            <LinearLayout
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/rounded_background_signup"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSignup">
+
+                <TextView
+                    style="@style/Subtitle2Semibold"
+                    android:id="@+id/tvSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/btn_login"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/state_loading"
+            android:layout_width="186dp"
+            android:layout_height="160dp"
+            android:visibility="gone"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_card_loading"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="41dp"
+                    android:layout_height="38dp"
+                    android:alpha="1"
+                    android:indeterminateTint="@color/red2"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/loading_state"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

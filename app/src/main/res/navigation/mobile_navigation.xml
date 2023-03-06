@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myecommerce.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_detailProductActivity"
+            app:destination="@id/detailProductActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.myecommerce.ui.favorite.FavoriteFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_navigation_favorite_to_detailProductActivity"
+            app:destination="@id/detailProductActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.myecommerce.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_changePasswordActivity"
+            app:destination="@id/changePasswordActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/changePasswordActivity"
+        android:name="com.example.myecommerce.ui.password.ChangePasswordActivity"
+        android:label="activity_change_password"
+        tools:layout="@layout/activity_change_password" />
+    <activity
+        android:id="@+id/detailProductActivity"
+        android:name="com.example.myecommerce.ui.detail.DetailProductActivity"
+        android:label="activity_detail_product"
+        tools:layout="@layout/activity_detail_product">
+        <argument
+            android:name="productID"
+            app:argType="integer"/>
+    </activity>
+</navigation>

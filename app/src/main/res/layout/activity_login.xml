@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red3"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_image_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clLogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tflEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/shades4"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@drawable/ic_person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tflPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/shades4"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tflEmailLogin"
+            app:startIconDrawable="@drawable/ic_lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="48dp"
+            android:text="@string/btn_login"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintEnd_toEndOf="@+id/tflPassword"
+            app:layout_constraintStart_toStartOf="@+id/tflPassword"
+            app:layout_constraintTop_toBottomOf="@+id/tflPassword" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_background_signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvSignup"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_signup"/>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/state_loading"
+        android:layout_width="186dp"
+        android:layout_height="160dp"
+        android:visibility="gone"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_card_loading"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="41dp"
+                android:layout_height="38dp"
+                android:alpha="1"
+                android:indeterminateTint="@color/red2"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/loading_state"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+                app:layout_constraintStart_toStartOf="@+id/progress_bar"
+                app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

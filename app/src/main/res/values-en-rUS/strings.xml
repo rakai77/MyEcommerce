@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyEcommerce</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="message_action">Enter your %1$s</string>
+    <string name="error_login">Login failed, please try again!</string>
+    <string name="error_signup">Signup failed, please try again!</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="profile_email">kopites@gmail.com</string>
+    <string name="change_language">Change Language</string>
+
+    <string name="content_description">This is image</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="btn_save">Save</string>
+    <string name="loading_state">Loading…</string>
+
+    <string name="wrong_email_format">Wrong Email Format</string>
+    <string name="image_camera_icon">Camera Icon</string>
+    <string name="error_camera">Error Camera</string>
+    <string name="error_pick_image">Error Pick Camera</string>
+    <string name="permission_failed">Permission failed</string>
+    <string name="btn_camera">Camera</string>
+    <string name="btn_gallery">Gallery</string>
+    <string name="select_image">Select Image</string>
+    <string name="open_gallery">Choose a picture</string>
+
+    <string name="empty_data">Empty Data</string>
+    <string name="sort_by">Sort By</string>
+
+    <string name="stock_product">Stock</string>
+    <string name="size_product">Size</string>
+    <string name="weight_product">Weight</string>
+    <string name="type_product">Type</string>
+    <string name="desc_product">Description</string>
+    <string name="detail_product">Detail Product</string>
+    <string name="trolley">Trolley</string>
+    <string name="buy">Buy</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="total">Total</string>
+
+    <string name="order_successfully">Your Order Is Successfully</string>
+    <string name="order_rating">Give Your Rating</string>
+    <string name="btn_submit">Submit</string>
+
+    <string name="out_of_stock"> Out Of Stock</string>
+    <string name="select_all">Select All</string>
+    <string name="connectivity"> Check Your Connectivity</string>
+    <string name="btn_refresh">Refresh</string>
+
+</resources>

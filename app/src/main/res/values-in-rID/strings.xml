@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyEcommerce</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="btn_login">Masuk</string>
+    <string name="btn_signup">Daftar</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="name">Nama</string>
+    <string name="phone">No Telepon</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="male">Laki - laki</string>
+    <string name="female">Perempuan</string>
+    <string name="message_action">Masukan %1$s</string>
+    <string name="error_login">Tidak dapat masuk, silahkan coba lagi!</string>
+    <string name="error_signup">Tidak dapat daftar, silahkan coba lagi!</string>
+    <string name="profile_name">Nama User</string>
+    <string name="profile_email">kopites@gmail.com</string>
+    <string name="change_language">Ganti Bahasa</string>
+
+    <string name="content_description">Ini Sebuah Gambar</string>
+    <string name="change_password">Ganti Kata Sandi</string>
+    <string name="logout">Keluar</string>
+    <string name="old_password">Kata Sandi Lama</string>
+    <string name="new_password">Kata Sandi Baru</string>
+    <string name="confirm_new_password">Konfirmasi Kata Sandi Baru</string>
+    <string name="btn_save">Simpan</string>
+    <string name="loading_state">Menunggu…</string>
+
+    <string name="wrong_email_format">Email Tidak Sesuai</string>
+    <string name="image_camera_icon">Camera Icon</string>
+    <string name="error_camera">Kamera Gagal</string>
+    <string name="error_pick_image">Gagal Memilih Kamera</string>
+    <string name="permission_failed">Permintaan gagal</string>
+    <string name="btn_camera">Kamera</string>
+    <string name="btn_gallery">Galeri</string>
+    <string name="select_image">Pilih Gambar</string>
+    <string name="open_gallery">Pililah Gambar</string>
+
+    <string name="empty_data">Tidak Ada Data</string>
+    <string name="sort_by">Urutkan Dari</string>
+
+    <string name="stock_product">Stok</string>
+    <string name="size_product">Ukuran</string>
+    <string name="weight_product">Berat</string>
+    <string name="type_product">Tipe</string>
+    <string name="desc_product">Deskripsi</string>
+    <string name="detail_product">Produk Detail</string>
+    <string name="trolley">Keranjang</string>
+    <string name="buy">Beli</string>
+    <string name="buy_now">Beli Sekarang</string>
+    <string name="total">Total</string>
+
+    <string name="order_successfully">Pesanan Anda Berhasil</string>
+    <string name="order_rating">Berikan Penilaian Anda</string>
+    <string name="btn_submit">Submit</string>
+
+    <string name="out_of_stock"> Stock Habis</string>
+    <string name="select_all">Pilih Semua</string>
+    <string name="connectivity"> Koneksi Bermasalah</string>
+    <string name="btn_refresh">Muat Ulang</string>
+
+</resources>
