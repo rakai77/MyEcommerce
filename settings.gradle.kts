@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MyEcommerce"
-include ':app'
+include(":app")

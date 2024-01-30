@@ -1,0 +1,87 @@
+[versions]
+agp = "8.2.1"
+core-ktx = "1.12.0"
+org-jetbrains-kotlin-android = "1.9.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+constraintlayout = "2.1.4"
+navigation-version = "2.7.6"
+shimmer = "0.5.0"
+hilt-plugin = "2.48"
+datastore = "1.0.0"
+picasso = "2.71828"
+circle-image = "3.1.0"
+glide = "4.15.0"
+dot-indicator = "4.3"
+
+#Networking
+retrofit = "2.9.0"
+retrofit-gson = "2.9.0"
+interceptor = "5.0.0-alpha.7"
+
+#room
+room-version = "2.6.1"
+
+#camera
+camera = "1.1.0-beta03"
+
+swipe-refresh = "1.1.0"
+
+paging = "3.2.1"
+
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation-version" }
+navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation-version" }
+shimmer = { module = "com.facebook.shimmer:shimmer", version.ref = "shimmer"}
+picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+hdodenhof = { module = "de.hdodenhof:circleimageview", version.ref = "circle-image"}
+bumtech-glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide"}
+dot-indicator = { module = "com.tbuonomo:dotsindicator", version.ref = "dot-indicator"}
+
+#Camera
+camera = { module = "androidx.camera:camera-camera2", version.ref = "camera" }
+camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "camera" }
+camera-view = { module = "androidx.camera:camera-view", version.ref = "camera"}
+
+swipe-refresh = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swipe-refresh"}
+preferences-data-store = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+
+#Hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-plugin" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt-plugin" }
+
+# Networking
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit-gson" }
+interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "interceptor" }
+
+#room
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room-version" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room-version" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room-version" }
+
+#paging
+paging = { module = "androidx.paging:paging-runtime-ktx", version.ref = "paging"}
+
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt-plugin"}
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "org-jetbrains-kotlin-android" }
+
+[bundles]
+network = ["retrofit", "retrofit-gson", "interceptor"]
+camera = ["camera", "camera-lifecycle", "camera-view"]
